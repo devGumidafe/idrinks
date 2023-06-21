@@ -24,7 +24,7 @@ export const useFavoritesStore = defineStore('favorites', () => {
       );
       if (index === -1) {
         favorites.value.push(recipe);
-        setNotification(`Agregado a favoritos ${recipe.strDrink}`, true);
+        setNotification(`Agregado a favoritos ${recipe.strDrink}`, false);
       } else {
         favorites.value.splice(index, 1);
         setNotification(`Eliminado de favoritos ${recipe.strDrink}`, true);

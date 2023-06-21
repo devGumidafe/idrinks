@@ -17,7 +17,7 @@ export const useNotificationStore = defineStore('notification', () => {
       showNotification.value = false;
       textNotification.value = '';
       errorNotification.value = false;
-    }, 5000);
+    }, 3000);
   };
 
   watch(showNotification, (value) => {
